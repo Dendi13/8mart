@@ -19,7 +19,7 @@ img {
 }
 
 .card {
-    background-color: aquamarine;
+    background-color: rgb(229, 185, 238);
     position: absolute;
     left: calc(50% - 175px);
     top: calc(50% - 250px);
@@ -73,7 +73,8 @@ img {
 
 
 .card__page-inside {
-    background-color: rgb(21, 159, 113);
+    background-color:rgb(229, 185, 238);
+    border-right: 3px solid white;
     transform: rotateY(-180deg);
 }
 
@@ -83,4 +84,24 @@ img {
     justify-content: center;
     text-align: center;
     font-size: 50px;
+    animation: item-run 5s ease infinite alternate;
+    animation-name: color;
+}
+
+@keyframes color{
+    0%{
+        color: white;
+    }
+    25%{
+        color: red;
+    }
+    50%{
+        color: aqua;
+    }
+    75%{
+        color: pink;
+    }
+    100%{
+        color: yellow;
+    }
 }
